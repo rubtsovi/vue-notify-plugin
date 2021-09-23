@@ -2,5 +2,6 @@
   "plugin/main.css": "/plugin/main.css",
   "plugin/main.js": "/plugin/main.js",
   "runtime.js": "/runtime.js",
-  "73.js": "/73.js"
+  "73.js": "/73.js",
+  "index.d.ts": "/index.d.ts"
 }

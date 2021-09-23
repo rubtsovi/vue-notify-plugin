@@ -17,6 +17,7 @@ Encore
     .cleanupOutputBeforeBuild()
     .enableVueLoader()
     .enableTypeScriptLoader()
+    .copyFiles({from: "./src", pattern: /index\.d\.ts$/})
     .enableSourceMaps(Encore.isDev())
     .enableSingleRuntimeChunk()
     .configureDevServerOptions((options) => {
