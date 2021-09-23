@@ -12,6 +12,7 @@
     "sourceMap": true,
     "types": ["webpack-env"],
     "baseUrl": "./",
+    "outDir": "dist/types",
     "paths": {
       "@plugin/*": ["src/*"]
     },
