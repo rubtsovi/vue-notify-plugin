@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const Encore = require("@symfony/webpack-encore");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const TsconfigPathsPlugin = require("tsconfig-paths-webpack-plugin");
 const path = require("path");
 
@@ -13,9 +12,7 @@ Encore
     .setOutputPath("dist")
     .setPublicPath("/")
     .addEntry("plugin/main", "./src/main.ts")
-    .addEntry("demo/app", "./demo/app.ts")
     .enableSassLoader()
-    .enablePostCssLoader()
     .splitEntryChunks()
     .cleanupOutputBeforeBuild()
     .enableVueLoader()
@@ -24,10 +21,7 @@ Encore
     .enableSingleRuntimeChunk()
     .configureDevServerOptions((options) => {
         options.open = true;
-    })
-    .addPlugin(new HtmlWebpackPlugin({
-        chunks: ["demo/app", "demo/styles"]
-    }));
+    });
 
 const config = Encore.getWebpackConfig();
 
