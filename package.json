@@ -39,7 +39,7 @@
   },
   "homepage": "https://github.com/rubtsovi/vue-notify-plugin#readme",
   "license": "MIT",
-  "main": "src/main.js",
+  "main": "dist/main.js",
   "name": "@deweb/vue-notify-plugin",
   "repository": {
     "type": "git",

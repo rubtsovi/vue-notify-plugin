@@ -1,0 +1,14 @@
+{
+  "entrypoints": {
+    "plugin/main": {
+      "js": [
+        "/runtime.js",
+        "/73.js",
+        "/plugin/main.js"
+      ],
+      "css": [
+        "/plugin/main.css"
+      ]
+    }
+  }
+}
