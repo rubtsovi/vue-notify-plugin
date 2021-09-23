@@ -1,0 +1,6 @@
+@use "../../src/styles/v-notify-vars" as vue-notify with (
+    $toast-border-radius: 1rem,
+    $bord
+);
+@use "../../src/styles/v-notify-styles";
+

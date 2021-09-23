@@ -1,0 +1,129 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/montserrat/v15/JTUSjIg1_i6t8kCHKm459Wdhyzbi.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_bZF3gfD_u50.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+
+    @font-face {
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 900;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/montserrat/v15/JTURjIg1_i6t8kCHKm45_epG3gfD_u50.woff2) format('woff2');
+        unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+    }
+}
+
+@layer components {
+
+    .heading{
+        @apply text-2xl font-black uppercase mb-3
+    }
+
+    .control {
+        @apply py-2 px-7 w-full border-3 border-black rounded-2xl placeholder-transparent
+    }
+
+    .floating-label {
+        @apply absolute transition-all
+        px-3.5 left-3.5 top-[0.7rem]
+        uppercase bg-white
+        translate-x-3.5 -translate-y-full text-sm
+        peer-placeholder-shown:cursor-text
+        peer-placeholder-shown:text-gray-600 peer-placeholder-shown:translate-x-0 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:text-base
+        peer-focus:translate-x-3.5 peer-focus:-translate-y-full peer-focus:text-black peer-focus:bg-white peer-focus:text-sm peer-focus:cursor-default
+    }
+
+    .btn{
+        @apply py-2 px-7 border-black overflow-hidden flex items-center relative flex-grow justify-center
+    }
+
+    .btn-container{
+        @apply flex flex-wrap md:flex-nowrap
+    }
+
+    .btn-primary{
+        @apply bg-primary text-white
+    }
+
+    .btn-secondary{
+        @apply bg-secondary text-white
+    }
+
+    .btn-success{
+        @apply bg-success text-white
+    }
+
+    .btn-warning{
+        @apply bg-warning text-gray-900
+    }
+
+    .btn-info{
+        @apply bg-info text-white
+    }
+
+    .btn-danger{
+        @apply bg-danger text-white
+    }
+
+    /* .v-notify-toast{
+        @apply py-2 px-6 rounded-2xl border-black border-3
+    }
+
+    .v-notify-toast-outer:not(:last-child){
+        @apply mb-2
+    }
+
+    .v-notify-toast.default{
+        @apply text-black bg-white
+    }
+
+    .v-notify-toast.primary{
+        @apply  text-white bg-primary
+    }
+
+    .v-notify-toast.secondary{
+        @apply  text-white bg-secondary
+    }
+
+    .v-notify-toast.success{
+        @apply  text-white bg-success
+    }
+
+    .v-notify-toast.danger{
+        @apply  text-white bg-danger
+    }
+
+    .v-notify-toast.info{
+        @apply  text-white bg-info
+    }
+
+    .v-notify-toast.warning{
+        @apply  text-gray-900 bg-warning
+    }
+
+    .v-notify-toast-header{
+        @apply flex justify-between
+    }
+
+    .v-notify-toast-header span:first-child{
+        @apply font-bold uppercase;
+    } */
+}
