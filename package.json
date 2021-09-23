@@ -46,10 +46,10 @@
     "url": "git+https://github.com/rubtsovi/vue-notify-plugin.git"
   },
   "scripts": {
-    "dev": " node node_modules/.bin/encore dev",
-    "watch": "node node_modules/.bin/encore dev --watch",
-    "prod": "node node_modules/.bin/encore prod",
-    "serve": "node node_modules/.bin/encore dev-server",
+    "dev": "encore dev",
+    "watch": "encore dev --watch",
+    "prod": "encore prod",
+    "serve": "encore dev-server",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "npm run prod"
   },
